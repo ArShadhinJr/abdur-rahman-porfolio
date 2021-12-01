@@ -8,8 +8,8 @@ const Banner = () => {
         <>
             <div className=" bg-banner ">
                 <Container >
-                    <Row sm={1} md={2}>
-                        <Col><Card.Img variant="top" className="p-img rounded rounded-circle" src="https://i.ibb.co/SnCd3ML/Whats-App-Image-2021-12-01-at-2-40-59-PM.jpg" /></Col>
+                    <Row xs={1}  md={2}>
+                        <Col><Card.Img variant="top" className="p-img p-xs-3 rounded rounded-circle" src="https://i.ibb.co/SnCd3ML/Whats-App-Image-2021-12-01-at-2-40-59-PM.jpg" /></Col>
                         <Col className="d-flex align-items-center">
                             <div >
                                 <h2>Hey You!</h2>
