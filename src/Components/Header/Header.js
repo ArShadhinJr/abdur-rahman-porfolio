@@ -21,7 +21,7 @@ const Header = () => {
                             <Nav.Link className="btn" href="#action2">PROJECTS</Nav.Link>
                             <Nav.Link className="btn" href="#action3">BLOGS</Nav.Link>
                             <Nav.Link className="btn" href="#action4">CONTACT</Nav.Link>
-                            <Nav.Link className="btn btn-light" href="https://drive.google.com/file/d/1MvOa40LRLVSRCamXWN7tLJuLxmCzD1u1/view">RESUME</Nav.Link>
+                            <Nav.Link className="btn btn-light" href="https://drive.google.com/uc?export=download&id=1MvOa40LRLVSRCamXWN7tLJuLxmCzD1u1">RESUME</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
