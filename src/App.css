@@ -43,3 +43,7 @@
   width: 55px;
   height: 55px;
 }
+::selection {
+  color: white;
+  background: black;
+}
