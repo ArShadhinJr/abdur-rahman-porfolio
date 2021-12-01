@@ -22,7 +22,7 @@ const Banner = () => {
                                 <h2>Hey You!</h2>
                                 <h2>I'm ABDUR RAHMAN</h2>
                                 <TypewriterSlug></TypewriterSlug>
-                                <p>I'm simple, I love simple, I want to work with you, Becouse you love simple.
+                                <p>I'm simple, I love simple, I want to work with you, Becouse you love simple..
                                 </p>
                                 <Button className="btn btn-dark me-2">Hire Me</Button>
                                 <Button href="https://drive.google.com/uc?export=download&id=1MvOa40LRLVSRCamXWN7tLJuLxmCzD1u1" className="btn btn-info text-black">Download Resume</Button>
