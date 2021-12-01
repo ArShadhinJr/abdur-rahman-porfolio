@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import "./Header.css";
 
 const Header = () => {
     return (
-        <><Navbar bg="info" expand="lg">
+        <><Navbar bg="info" expand="lg" className="sticky-top">
             <Container className="d-flex " fluid="md">
                 <div flluid>
-                    <Navbar.Brand className="mb-0 pb-0 text-white text-uppercase fw-bolder" href="#">ABdur Rahman</Navbar.Brand>
+                    <Navbar.Brand className="mb-0 pb-0 text-white text-uppercase fw-bolder fs-2 nav-heading" href="#"><span className="fs-1 text-black-50">a</span>Bdur <span className="fs-1 text-black-50">r</span>ahman</Navbar.Brand>
                 </div>
                 <div>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -25,7 +26,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </div>
             </Container>
-        </Navbar></> 
+        </Navbar></>
     );
 };
 
