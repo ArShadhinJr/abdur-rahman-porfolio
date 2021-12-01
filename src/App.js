@@ -8,14 +8,15 @@ import Skills from './Components/Skills/Skills';
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <Header></Header>
       <Banner></Banner>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
       <Footer></Footer>
-    </div>
+      <a href="#" className="gotop text-white bg-info p-3 border rounded-circle "><i class="fas fa-arrow-up"></i></a>
+    </div></>
   );
 }
 
