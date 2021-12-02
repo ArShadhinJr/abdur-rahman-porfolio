@@ -5,9 +5,9 @@ const TypewriterSlug = () => {
 
     return (
         <div>
-            <h2>
-                <span>
-                    <Typewriter
+            <h2> {' '}
+                <span className="bg-black text-white">
+                    <Typewriter 
                         words={[ 'Junior MERN Stack Developer💻', 'Junior Front-end Developer 💻', 'Junior Full Stack Developer💻', 'Junior React Developer💻' ]}
                         cursor
                         cursorStyle='∎'
