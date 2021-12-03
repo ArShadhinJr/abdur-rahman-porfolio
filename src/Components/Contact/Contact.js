@@ -1,6 +1,7 @@
 import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import "./Contact.css";
 
 const Contact = () => {
     const form = useRef();
@@ -16,29 +17,29 @@ const Contact = () => {
                 alert( error.text );
                 form.current.reset();
             } );
-            
+
     };
 
     return (
 
-        <><Container>
-            <h2 className="mb-0 pb-0 text-info text-uppercase fw-bolder fs-2 nav-heading" href="#"><span className="fs-1 text-black-50">c</span>ontact</h2>
+        <><div className="bg-custom"><Container>
+            <h2 className="mb-0 pb-0 text-info text-uppercase fw-bolder fs-2 nav-heading pt-4" href="#"><span className="fs-1 text-black-50">c</span>ontact <span className="fs-1 text-black-50">M</span>e</h2>
             <Row xs={1} md={2}>
-                <Col className="ps-3 pe-5">
+                <Col className="ps-3 pe-3">
                     <form ref={form} className="text-start" onSubmit={sendEmail}>
-                        <label class="form-label">Name</label>
-                        <input class="form-control" type="text" name="name" />
-                        <label class="form-label">Email</label>
-                        <input class="form-control" type="email" name="email" />
-                        <label class="form-label">Subject</label>
-                        <input class="form-control" type="text" name="subject" />
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="3" name="message" />
-                        <input class="btn btn-info  mb-3 mt-2" type="submit" value="Send" />
+                        <label class="form-label"><i class="fas fa-user-circle"></i> {" "}Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Pleace! Type Your Name." />
+                        <label class="form-label"><i class="fas fa-at"></i> {" "}Email</label>
+                        <input class="form-control" type="email" name="email" placeholder="Pleace! Type Your Email." />
+                        <label class="form-label" ><i class="fas fa-envelope"></i> {" "}Subject</label>
+                        <input class="form-control" type="text" name="subject" placeholder="Pleace! Type Your Subject." />
+                        <label class="form-label"><i class="fas fa-keyboard"></i> {" "}Message</label>
+                        <textarea class="form-control" rows="5" name="message" placeholder="Pleace! Type Your Message." />
+                        <input class="btn btn-info  mb-3 mt-2" type="submit" value="Send Email" />
                     </form>
                 </Col>
-                <Col></Col>
-            </Row></Container></>
+                <Col><Card.Img variant="top" className=" p-xs-3 p-2" src="https://i.ibb.co/dfk9cpD/123formbuilder-account-1x.png" /></Col>
+            </Row></Container></div></>
     );
 };
 
