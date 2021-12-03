@@ -27,13 +27,13 @@ const Contact = () => {
             <Row xs={1} md={2}>
                 <Col className="ps-3 pe-3">
                     <form ref={form} className="text-start" onSubmit={sendEmail}>
-                        <label class="form-label"><i class="fas fa-user-circle"></i> {" "}Name</label>
+                        <label class="form-label pt-1 ps-1 mb-0"><i class="p-0 m-0 fas fa-user-circle"></i> {" "}Name</label>
                         <input class="form-control" type="text" name="name" placeholder="Pleace! Type Your Name." />
-                        <label class="form-label"><i class="fas fa-at"></i> {" "}Email</label>
+                        <label class="form-label pt-1 ps-1 mb-0"><i class="p-0 m-0 fas fa-at"></i> {" "}Email</label>
                         <input class="form-control" type="email" name="email" placeholder="Pleace! Type Your Email." />
-                        <label class="form-label" ><i class="fas fa-envelope"></i> {" "}Subject</label>
+                        <label class="form-label pt-1 ps-1 mb-0" ><i class="p-0 m-0 fas fa-envelope"></i> {" "}Subject</label>
                         <input class="form-control" type="text" name="subject" placeholder="Pleace! Type Your Subject." />
-                        <label class="form-label"><i class="fas fa-keyboard"></i> {" "}Message</label>
+                        <label class="form-label pt-1 ps-1 mb-0"><i class="p-0 m-0 fas fa-keyboard"></i> {" "}Message</label>
                         <textarea class="form-control" rows="5" name="message" placeholder="Pleace! Type Your Message." />
                         <input class="btn btn-info  mb-3 mt-2" type="submit" value="Send Email" />
                     </form>

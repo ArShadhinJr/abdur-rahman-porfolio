@@ -6,3 +6,9 @@
 .p-img {
     padding: 90px;
 }
+
+@media only screen and (max-width: 600px) {
+  .p-img {
+   padding: 20px;
+  }
+}
